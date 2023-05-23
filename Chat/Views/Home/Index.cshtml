@@ -1,0 +1,37 @@
+﻿<h1>Simple SignalR-Chat</h1>
+
+<table>
+	<tr>
+		<th>
+			Text der Nachricht:
+		</th>
+		<th>
+
+		</th>
+		<th>
+			Aktive Teilnehmer
+		</th>
+	</tr>
+	<tr>
+		<td>
+			<input type="text" id="message" />
+		</td>
+		<td>
+			<input type="button" id="sendmessage" value="Senden" />
+		</td>
+		<td rowspan="2">
+			<select id="teilnehmer" size="9">
+				<option disabled="disabled">Benutzer auswählen</option>
+			</select>
+			<br />
+			<input type="button" value="Auswahl aufheben" id="deselect">
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<textarea id="discussion" rows="15" cols="50">
+
+			</textarea>
+		</td>
+	</tr>
+</table>
