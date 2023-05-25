@@ -5,9 +5,7 @@ let username;
 init();
 
 function init() {
-    $('#displayname').val(prompt('Bitte Namen eingeben:', ''));
-
-    username = $('#displayname').val();
+    username = prompt("Bitte Namen eingeben:", '')
 
     if (username === undefined || username === '') {
         username = "ChatUser" + Math.floor(Math.random() * (100 - 1) + 1);
